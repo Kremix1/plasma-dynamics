@@ -1,0 +1,264 @@
+@use '/src/styles/global-vars' as *;
+@import "works";
+
+.plasmatron {
+
+    &__swiper {
+        overflow: hidden;
+        margin: 0 auto;
+        background-color: $white-primary;
+        border-radius: 15px;
+        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
+    }
+
+    &__swiper-wrapper {
+
+    }
+
+    &__swiper-slide {
+        text-align: center;
+    }
+
+    &__swiper-pagination {
+
+    }
+
+    &__swiper-button-next {
+        width: 40px;
+        height: 40px;
+        background-color: green;
+    }
+
+    &__swiper-button-prev {
+        width: 40px;
+        height: 40px;
+        background-color: red;
+    }
+
+
+
+    &__container {
+        @include container
+    }
+
+    &__process {
+        position: relative;
+        margin-bottom: 80px;
+    }
+
+    &__number {
+        position: absolute;
+        top: -70px;
+        left: -90px;
+        font-weight: 700;
+        font-size: 150px;
+        line-height: 180px;
+        color: $gray-secondary;
+    }
+
+    &__title {
+        @include title
+    }
+
+    &__subtitle {
+        font-size: 32px;
+        margin-bottom: 60px;
+    }
+
+    &__body {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 55px;
+        flex-wrap: wrap;
+    }
+
+    &__text {
+        padding: 40px 30px;
+        border-radius: 15px;
+        background-color: $green-primary;
+        color: $white-primary;
+        max-width: 470px;
+    }
+
+    &__img {
+
+    }
+
+
+
+
+    &__coating {
+        margin-bottom: 80px;
+    }
+
+
+
+
+    &__cost {
+        margin-bottom: 80px;
+    }
+
+    &__subsubtitle {
+        font-size: 20px;
+        margin-bottom: 50px;
+    }
+
+    &__cost-body {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: stretch;
+        justify-content: space-around;
+        gap: 20px;
+    }
+
+    &__cost-item {
+        box-shadow: 1px 4px 8px 2px rgba(0, 0, 0, 0.09);
+        border-radius: 15px;
+        padding: 35px;
+        position: relative;
+        font-weight: 600;
+        font-size: 20px;
+        flex: 33.333 0 0%;
+    }
+
+    &__cost-item-group {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    &__cost-number {
+        position: absolute;
+        top: -15px;
+        left: -15px;
+        font-weight: 700;
+        font-size: 64px;
+        color: $green-primary;
+    }
+
+    &__cost-desc {
+        font-weight: 600;
+        font-size: 20px;
+    }
+
+    &__list {
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+
+    &__list-item {
+        list-style-type: disc;
+        font-size: 18px;
+    }
+
+
+
+    &__works {
+        margin-bottom: 80px;
+    }
+
+
+
+    &__works-completed {
+        margin-bottom: 200px;
+    }
+
+    &__works-completed-body {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        column-gap: 100px;
+        row-gap: 30px;
+    }
+
+    &__works-completed-group {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        flex: 33.333 0 0;
+    }
+
+    &__works-completed-item {
+        width: 100%;
+        height: 80px;
+        box-shadow: 1px 4px 8px 2px rgba(0, 0, 0, 0.09);
+        border-radius: 15px;
+        padding: 30px 60px;
+        font-weight: 600;
+        font-size: 20px;
+        position: relative;
+    }
+
+    &__works-completed-cubes {
+        position: absolute;
+        left: -50px;
+        top: 5px;
+    }
+
+
+
+    &__craft {
+        position: relative;
+    }
+
+
+
+}
+
+@media (max-width: 900px) {
+    .plasmatron {
+        &__number {
+            left: -60px;
+            z-index: -1;
+        }
+
+        &__img {
+            width: 470px;
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .plasmatron {
+        &__number {
+            left: -70px;
+            z-index: -1;
+        }
+
+        &__img {
+            width: 370px;
+        }
+    }
+}
+
+@media (max-width: 679px) {
+    .plasmatron {
+        &__cost-item-group {
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .plasmatron {
+        &__works-completed-body {
+            margin-left: 50px;
+        }
+    }
+}
+
+@media (max-width: 450px) {
+    .plasmatron {
+        &__number {
+            left: -60px;
+            z-index: -1;
+        }
+
+        &__img {
+            width: 310px;
+        }
+    }
+}

@@ -1,0 +1,52 @@
+/*colors*/
+$white-primary: #fff;
+$green-primary: #51BF47;
+$gray-primary: #393939;
+$gray-secondary: #F4F4F4;
+$gray-footer: #9C9C9C;
+
+/*font-colors*/
+
+$primary: #fff;
+$secondary: #000;
+$black-text: #161616;
+$green: #157110;
+$green-dark: #1C6318;
+
+/*mixins*/
+
+@mixin container {
+    padding: 100px 155px;
+
+    @media (max-width: 1200px) {
+        padding: 70px 110px;
+    }
+
+    @media (max-width: 959px) {
+        padding: 70px 80px;
+    }
+
+    @media (max-width: 600px) {
+        padding: 70px 60px;
+    }
+
+    @media (max-width: 400px) {
+        padding: 20px 20px;
+    }
+}
+
+@mixin title {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 40px;
+    color: $secondary;
+    margin-bottom: 80px;
+
+    @media (max-width: 600px) {
+        font-size: 36px;
+    }
+
+    @media (max-width: 400px) {
+        margin-bottom: 35px;
+    }
+}

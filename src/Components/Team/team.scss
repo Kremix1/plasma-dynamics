@@ -1,0 +1,87 @@
+@use '/src/styles/global-vars' as *;
+
+.team {
+    &__container {
+        @include container;
+    }
+
+    &__title {
+        @include title
+    }
+
+    &__body {
+        display: flex;
+        gap: 48px;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        background: url("../../../public/images/team/team-card-bg.svg") 0/100% no-repeat;
+        padding: 40px 32px;
+    }
+
+    &__photo {
+        width: 100%;
+        margin-bottom: 25px;
+    }
+
+    &__name {
+        margin-bottom: 10px;
+        color: $green;
+    }
+
+    &__job-title {
+
+    }
+}
+
+@media (max-width: 959px) {
+    .team {
+        &__body {
+            display: flex;
+            gap: 48px;
+            justify-content: flex-start;
+            flex-wrap: nowrap;
+            overflow: scroll;
+            padding: 0 20px 10px;
+        }
+
+        &__item {
+            flex-shrink: 0;
+        }
+    }
+}
+
+@media (max-width: 425px) {
+    .team {
+        &__item {
+            width: 300px;
+        }
+    }
+}
+
+@media (max-width: 425px) {
+    .team {
+        &__item {
+            width: 300px;
+        }
+    }
+}
+
+@media (max-width: 375px) {
+    .team {
+        &__item {
+            width: 250px;
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    .team {
+        &__item {
+            width: 220px;
+        }
+    }
+}

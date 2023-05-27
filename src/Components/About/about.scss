@@ -1,0 +1,42 @@
+@use '/src/styles/global-vars' as *;
+
+.about {
+    &__container {
+        @include container;
+    }
+
+    &__title {
+        @include title;
+    }
+
+    &__body {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 75px;
+        flex-wrap: wrap;
+
+        div {
+            width: 530px;
+            height: fit-content;
+        }
+    }
+
+    &__text {
+        background-color: $green-primary;
+        color: $primary;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        padding: 40px 32px;
+        border-radius: 15px;
+    }
+}
+
+@media (max-width: 700px) {
+    .about {
+        &__img {
+            width: 100%;
+        }
+    }
+}

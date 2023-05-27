@@ -1,0 +1,122 @@
+@use '/src/styles/global-vars' as *;
+
+.leave-request {
+    &__container {
+        @include container;
+    }
+
+    &__title {
+        @include title;
+    }
+
+    &__body {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 80px;
+    }
+
+    &__img {
+        order: 2;
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    &__text {
+        width: 460px;
+        margin-bottom: 30px;
+    }
+
+    &__input {
+        padding: 15px 25px;
+        gap: 10px;
+        width: 450px;
+        height: 50px;
+        border: 2px solid #010101;
+        border-radius: 15px;
+        font-size: 18px;
+    }
+
+    &__input-area {
+        padding: 15px 25px;
+        gap: 10px;
+        width: 450px;
+        height: 90px;
+        border: 2px solid #010101;
+        border-radius: 15px;
+        font-size: 18px;
+        resize: none;
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+
+    &__checkbox-label {
+        margin-top: 20px;
+        display: inline-flex;
+        align-items: center;
+        font-size: 16px;
+    }
+
+    &__checkbox {
+        margin-right: 20px;
+    }
+
+    &__button {
+        width: 150px;
+        margin-top: 30px;
+        padding: 15px 25px;
+        background: $green-primary;
+        border-radius: 15px;
+        font-size: 18px;
+        letter-spacing: 0.0em;
+        color: $white-primary;
+        font-weight: 500;
+    }
+}
+
+@media (max-width: 1376px) {
+    .leave-request {
+        &__img {
+            order: 1;
+        }
+
+        &__form {
+            order: 2;
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .leave-request {
+        &__img {
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    .leave-request {
+        &__form {
+            width: 100%;
+            align-items: center;
+        }
+
+        &__text {
+            width: 100%;
+        }
+
+        &__input {
+            width: 100%;
+        }
+
+        &__input-area {
+            width: 100%;
+        }
+    }
+}

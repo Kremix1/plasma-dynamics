@@ -1,0 +1,26 @@
+@use '/src/styles/global-vars' as *;
+
+.customers {
+    &__container {
+        @include container;
+        background-color: $gray-secondary;
+    }
+
+    &__title {
+        @include title;
+    }
+
+    &__body {
+        padding: 24px 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 70px;
+        background-color: $white-primary;
+        flex-wrap: wrap;
+    }
+
+    &__img {
+
+    }
+}

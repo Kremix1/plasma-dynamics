@@ -1,0 +1,70 @@
+@use '/src/styles/global-vars' as *;
+
+.contacts {
+    &__container {
+        @include container;
+        background-color: $green-primary;
+    }
+
+    &__title {
+        @include title;
+        color: $white-primary;
+    }
+
+    &__body {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 80px;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    &__links {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    &__link {
+        display: flex;
+        align-items: center;
+    }
+
+    &__img {
+        margin-right: 10px;
+    }
+
+    &__text {
+        color: $white-primary;
+        font-size: 18px;
+    }
+
+    &__social {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    &__social-item {
+
+    }
+
+    &__map {
+        border-radius: 15px;
+    }
+}
+
+@media (max-width: 1276px) {
+    .contacts {
+        &__info {
+            order: 2;
+        }
+    }
+}

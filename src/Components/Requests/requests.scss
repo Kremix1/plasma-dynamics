@@ -1,0 +1,64 @@
+@use '/src/styles/global-vars' as *;
+
+.requests {
+    &__container {
+        @include container;
+        background-color: $green-primary;
+    }
+
+    &__title {
+        @include title;
+        color: $primary;
+    }
+
+    &__body {
+        display: flex;
+        gap: 75px;
+        align-items: flex-start;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        padding: 48px 40px;
+        background-color: $white-primary;
+        box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.25);
+        border-radius: 15px;
+        max-width: 550px;
+    }
+
+    &__number {
+        position: absolute;
+        top: -30px;
+        left: -30px;
+        color: $green;
+        font-weight: 700;
+        font-size: 96px;
+    }
+
+    &__item-title {
+        font-weight: 600;
+        font-size: 24px;
+        color: $green;
+        margin-bottom: 20px;
+    }
+
+    item-subtitle {
+
+    }
+}
+
+@media (max-width: 400px) {
+    .requests {
+        &__container {
+            padding-bottom: 50px;
+        }
+        &__number {
+            font-size: 78px;
+            left: -15px;
+        }
+    }
+}
