@@ -1,11 +1,9 @@
 import './plasmatron.scss'
-import 'swiper/swiper.scss';
+import 'swiper/css'
+import "swiper/css/navigation";
 import { Swiper, SwiperSlide } from 'swiper/react';
-import SwiperCore, {EffectCoverflow} from "swiper";
-import 'swiper/components/effect-fade/effect-fade.scss';
-import 'swiper/components/effect-cube/effect-cube.scss';
-import 'swiper/components/effect-flip/effect-flip.scss';
-import 'swiper/components/effect-coverflow/effect-coverflow.scss';
+import SwiperCore, {EffectCoverflow, Navigation} from "swiper";
+import {coating} from "../../Models/coating";
 export const Plasmatron: React.FC = () => {
     SwiperCore.use([EffectCoverflow]);
 
@@ -30,8 +28,25 @@ export const Plasmatron: React.FC = () => {
 
                 <div className='plasmatron__coating'>
                     <h2 className='plasmatron__subtitle'>Виды покрытий</h2>
-                    {/* TODO: Сюда слайдер с плазматронами*/}
-                    <div style={{color: "brown", fontWeight: 700, fontSize: '60px'}}> ЗДЕСЬ БУДЕТ СЛАЙДЕР</div>
+                    <div className='plasmatron__coating-swiper'>
+                        <Swiper
+                            navigation={true} modules={[Navigation]}
+                            spaceBetween={45}
+                            slidesPerView={3}
+                        >
+                            {coating.map((coat) =>
+                                <SwiperSlide>
+                                    <div className='plasmatron__coating-container'>
+                                        <h3 className='plasmatron__coating-title'>{coat.title}</h3>
+                                        <img
+                                            className='plasmatron__coating-img'
+                                            src={'/images/plasmatron/' + coat.img + '.svg'}
+                                        />
+                                    </div>
+                                </SwiperSlide>
+                            )}
+                        </Swiper>
+                    </div>
                 </div>
 
 
@@ -71,9 +86,9 @@ export const Plasmatron: React.FC = () => {
                     <h2 className='plasmatron__subtitle'>Примеры работ</h2>
                     <div className='plasmatron__swiper'>
                         <Swiper
+                            navigation={true} modules={[Navigation]}
                             spaceBetween={50}
                             slidesPerView={1}
-                            onSwiper={(swiper) => console.log(swiper)}
                         >
                             <SwiperSlide>
                                 <div className='works__container'>

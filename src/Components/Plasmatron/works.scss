@@ -1,3 +1,15 @@
+.swiper-button-next {
+    &::after {
+        color: #157110;
+    }
+}
+
+.swiper-button-prev {
+    &::after {
+        color: #157110;
+    }
+}
+
 .works {
     &__container {
         padding: 40px 30px;
@@ -33,6 +45,28 @@
 }
 
 @media (max-width: 700px) {
+    .works {
+        &__container {
+            padding-bottom: 70px;
+        }
+    }
+
+    .swiper-button-next {
+        top: 95% !important;
+        right: 35% !important;
+        &::after {
+            color: #157110;
+        }
+    }
+
+    .swiper-button-prev {
+        top: 95% !important;
+        left: 35% !important;
+        &::after {
+            color: #157110;
+        }
+    }
+
     .works {
         &__body {
             flex-direction: column;
