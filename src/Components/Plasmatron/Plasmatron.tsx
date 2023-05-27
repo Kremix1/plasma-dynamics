@@ -2,10 +2,22 @@ import './plasmatron.scss'
 import 'swiper/css'
 import "swiper/css/navigation";
 import { Swiper, SwiperSlide } from 'swiper/react';
-import SwiperCore, {EffectCoverflow, Navigation} from "swiper";
+import SwiperCore, {Navigation} from "swiper";
 import {coating} from "../../Models/coating";
+import {useEffect, useState} from "react";
 export const Plasmatron: React.FC = () => {
-    SwiperCore.use([EffectCoverflow]);
+    const [countOfSlides, setCountOfSides] = useState(3)
+    const calculateCountOfSlides = () => {
+        const globalWidth = window.innerWidth;
+        if (globalWidth < 1150)
+            setCountOfSides(2)
+        if (globalWidth < 700)
+            setCountOfSides(1)
+    }
+
+    useEffect(() => {
+        calculateCountOfSlides()
+    }, [])
 
     return (
         <div className='plasmatron' id='plasm'>
@@ -32,7 +44,7 @@ export const Plasmatron: React.FC = () => {
                         <Swiper
                             navigation={true} modules={[Navigation]}
                             spaceBetween={45}
-                            slidesPerView={3}
+                            slidesPerView={countOfSlides}
                         >
                             {coating.map((coat) =>
                                 <SwiperSlide>

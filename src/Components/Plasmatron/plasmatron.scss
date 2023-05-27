@@ -18,6 +18,10 @@
     &__coating-swiper {
         overflow: hidden;
         margin: 0 auto;
+        .swiper-slide {
+            display: flex;
+            justify-content: center;
+        }
     }
 
     &__coating-container {
