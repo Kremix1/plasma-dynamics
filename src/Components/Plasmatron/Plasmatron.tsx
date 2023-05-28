@@ -5,6 +5,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, {Navigation} from "swiper";
 import {coating} from "../../Models/coating";
 import {useEffect, useState} from "react";
+import {plasmTech} from "../../Models/plasmTech";
 export const Plasmatron: React.FC = () => {
     const [countOfSlides, setCountOfSides] = useState(3)
     const calculateCountOfSlides = () => {
@@ -219,8 +220,31 @@ export const Plasmatron: React.FC = () => {
                 <div className='plasmatron__craft' id='plasmatrons'>
                     <p className='plasmatron__number'>2</p>
                     <h1 className='plasmatron__title'>Разработка плазмотронов</h1>
-                    {/* TODO: Сюда слайдер с плазматронами*/}
-                    <div style={{color: "brown", fontWeight: 700, fontSize: '60px'}}> ЗДЕСЬ БУДЕТ СЛАЙДЕР</div>
+                    <div className='plasm-tech__container'>
+                        <h3 className='plasm-tech__title'>Технические характеристики</h3>
+                        <div className='plasm-tech__body'>
+                            <div className='plasm-tech__desc'>
+
+                                <div className='plasm-tech__group'>
+                                    <h4 className='plasm-tech__desc-title'>Наименование</h4>
+                                    {plasmTech.map((tech) =>
+                                        <p className='plasm-tech__desc-text'>{tech.title}</p>
+                                    )}
+                                </div>
+
+                                <div className='plasm-tech__group'>
+                                    <h4 className='plasm-tech__desc-title'>Значение</h4>
+                                    {plasmTech.map((tech) =>
+                                        <p className='plasm-tech__desc-text'>{tech.desc}</p>
+                                    )}
+                                </div>
+                            </div>
+
+                            <img className='plasm-tech__img' src='/images/plasmatron/plasm-tech.png'/>
+                        </div>
+                        <h3 className='plasm-tech__title'>Цена:</h3>
+                        <p className='plasm-tech__cost'>12324341 руб</p>
+                    </div>
                 </div>
 
             </div>

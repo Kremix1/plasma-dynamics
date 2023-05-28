@@ -1,8 +1,8 @@
 @use '/src/styles/global-vars' as *;
 @import "works";
+@import "plasmTech";
 
 .plasmatron {
-
     &__swiper {
         overflow: hidden;
         margin: 0 auto;
