@@ -7,7 +7,7 @@ import {Customers} from "./Customers/Customers.tsx";
 import {Requests} from "./Requests/Requests.tsx";
 import {Plasmatron} from "./Plasmatron/Plasmatron.tsx";
 import {Advantages} from "./Advantages/Advantages.tsx";
-import {LeaveRequest} from "./LeaveRequest/LeaveRequest.tsx";
+import {LeaveRequest} from "./LeaveRequest/LeaveRequest.jsx";
 import {Contacts} from "./Contacts/Contacts.tsx";
 import {Footer} from "./Footer/Footer.tsx";
 

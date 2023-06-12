@@ -32,6 +32,19 @@
         margin-bottom: 30px;
     }
 
+    &__approved-form {
+        width: 40%;
+        display: flex;
+        align-items: center;
+    }
+
+    &__approved-text {
+        font-weight: 600;
+        font-size: 32px;
+        text-align: center;
+        color: $green-dark;
+    }
+
     &__input {
         padding: 15px 25px;
         gap: 10px;
@@ -77,6 +90,10 @@
         letter-spacing: 0.0em;
         color: $white-primary;
         font-weight: 500;
+        &_gray {
+            background: rgba(39,39,39,0.4);
+            pointer-events: none;
+        }
     }
 }
 
@@ -88,6 +105,12 @@
 
         &__form {
             order: 2;
+        }
+
+        &__approved-form {
+            width: 100%;
+            display: flex;
+            align-items: center;
         }
     }
 }
