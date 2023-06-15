@@ -13,7 +13,7 @@ export const LeaveRequest = () => {
     const submitForm = (e) => {
         e.preventDefault();
         console.log('Зашёл в сабмит форм')
-        if (!validate('form_id', 'user_email', 'user_name', 'user_phone')) {
+        if (!validate()) {
             return;
         }
 
@@ -25,18 +25,10 @@ export const LeaveRequest = () => {
         });
         e.target.reset();
 
-        setApprovedForm(prev => !prev)
+        setApprovedForm(true);
     }
 
-    const validateForm = (e) => {
-        let name = document.querySelector("#user_name")
-        let phone = document.querySelector("#user_phone")
-        let mail = document.querySelector("#user_mail")
-
-
-    }
-
-    function validate(form_id, user_email, user_name, user_phone) {
+    function validate() {
         console.log('Зашёл в валидацию')
         let regMail = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
         let regPhone = /7\d{10}/;
