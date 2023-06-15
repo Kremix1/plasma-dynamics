@@ -11,19 +11,19 @@ export const LeaveRequest = () => {
     let [mail, setMail] = useState('')
 
     const submitForm = (e) => {
-        e.preventDefault();
+        // e.preventDefault();
         console.log('Зашёл в сабмит форм')
         if (!validate()) {
             return;
         }
 
-        emailjs.sendForm('service_818q51x', 'template_dd0mmhr', form.current, 'ADQS3Y40pUo1_c19z')
-        .then((result) => {
-            console.log(result.text);
-        }, (error) => {
-            console.log(error.text);
-        });
-        e.target.reset();
+        // emailjs.sendForm('service_818q51x', 'template_dd0mmhr', form.current, 'ADQS3Y40pUo1_c19z')
+        // .then((result) => {
+        //     console.log(result.text);
+        // }, (error) => {
+        //     console.log(error.text);
+        // });
+        // e.target.reset();
 
         setApprovedForm(true);
     }
@@ -59,7 +59,7 @@ export const LeaveRequest = () => {
                 <div className='leave-request__body'>
                     <img className='leave-request__img' src='/images/about/plasmatron.png'/>
                     {!approvedForm ?
-                        <form ref={form} name='form_id' id='form_id' className='leave-request__form' onSubmit={(e) => submitForm(e)}>
+                        <form ref={form} action="send.php" method="POST" name='form_id' id='form_id' className='leave-request__form' onSubmit={(e) => submitForm(e)}>
                             <p className='leave-request__text'>Если остались вопросы, оставьте свою заявку.<br/>Специалисты свяжутся с вами и помогут найти нужное для вас решение.</p>
                             <input value={name} onChange={(e) => setName(e.target.value)} id='user_name' type='text' name="user_name" className='leave-request__input' placeholder='Имя*'/>
                             <input value={phone} onChange={(e) => setPhone(e.target.value)} id='user_phone' type='text' name="user_phone" className='leave-request__input' placeholder='Номер телефона*'/>
