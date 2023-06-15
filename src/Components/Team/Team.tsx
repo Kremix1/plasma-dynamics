@@ -1,7 +1,6 @@
 import "./team.scss"
 // @ts-ignore
 import {teamPersons} from "../../Models/team.ts";
-import { Key, ReactElement, JSXElementConstructor, ReactFragment, ReactPortal } from "react";
 
 export const Team: React.FC = () => {
     return (

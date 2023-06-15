@@ -6,8 +6,10 @@ import SwiperCore, {Navigation} from "swiper";
 import {coating} from "../../Models/coating";
 import {useEffect, useState} from "react";
 import {plasmTech} from "../../Models/plasmTech";
+import {CoatingItem} from "./CoatingItem";
 export const Plasmatron: React.FC = () => {
     const [countOfSlides, setCountOfSides] = useState(3)
+
     const calculateCountOfSlides = () => {
         const globalWidth = window.innerWidth;
         if (globalWidth < 1150)
@@ -28,11 +30,7 @@ export const Plasmatron: React.FC = () => {
                     <h1 className='plasmatron__title'>Плазменное напыление</h1>
                     <h2 className='plasmatron__subtitle'>Описание процесса</h2>
                     <div className='plasmatron__body'>
-                        <div className='plasmatron__text'>Плазменная наплавка –
-                            это метод наложения износоустойчивого покрытия на рабочу поверхность.
-                            Она повышает эксплуатационные характеристики поверхностей изделий,
-                            придает деталям механизмов износостойкость, жаропрочность,
-                            теплопроводность, кислотоупорность.
+                        <div className='plasmatron__text'>Плазменное напыление - это технология нанесения на поверхность изделий функциональных покрытий. Данный метод позволяет увеличить срок эксплуатации деталей, а также восстановить изношенное изделие. Плазменное напыление широко применяется для защиты от высокотемпературного износа, для защиты от коррозии, для упрочнения поверхности деталей, работающих при высоких нагрузках.
                         </div>
                         <img className='plasmatron__img' src='/images/plasmatron/plasmatron.svg'/>
                     </div>
@@ -49,13 +47,7 @@ export const Plasmatron: React.FC = () => {
                         >
                             {coating.map((coat) =>
                                 <SwiperSlide>
-                                    <div className='plasmatron__coating-container'>
-                                        <h3 className='plasmatron__coating-title'>{coat.title}</h3>
-                                        <img
-                                            className='plasmatron__coating-img'
-                                            src={'/images/plasmatron/' + coat.img + '.svg'}
-                                        />
-                                    </div>
+                                    <CoatingItem coating={coat} />
                                 </SwiperSlide>
                             )}
                         </Swiper>
@@ -162,59 +154,59 @@ export const Plasmatron: React.FC = () => {
                 </div>
 
 
-                <div className='plasmatron__works-completed'>
-                    <h2 className='plasmatron__subtitle'>Акт выполненных работ</h2>
-                    <div className='plasmatron__works-completed-body'>
-                        <div className='plasmatron__works-completed-group'>
-                            <div className='plasmatron__works-completed-item'>
-                                <img
-                                    className='plasmatron__works-completed-cubes'
-                                    src='/images/plasmatron/cubes.svg'
-                                />
-                                <p>Компания</p>
-                            </div>
-                            <div className='plasmatron__works-completed-item'>
-                                <img
-                                    className='plasmatron__works-completed-cubes'
-                                    src='/images/plasmatron/cubes.svg'
-                                />
-                                <p>Компания</p>
-                            </div>
-                        </div>
-                        <div className='plasmatron__works-completed-group'>
-                            <div className='plasmatron__works-completed-item'>
-                                <img
-                                    className='plasmatron__works-completed-cubes'
-                                    src='/images/plasmatron/cubes.svg'
-                                />
-                                <p>Компания</p>
-                            </div>
-                            <div className='plasmatron__works-completed-item'>
-                                <img
-                                    className='plasmatron__works-completed-cubes'
-                                    src='/images/plasmatron/cubes.svg'
-                                />
-                                <p>Компания</p>
-                            </div>
-                        </div>
-                        <div className='plasmatron__works-completed-group'>
-                            <div className='plasmatron__works-completed-item'>
-                                <img
-                                    className='plasmatron__works-completed-cubes'
-                                    src='/images/plasmatron/cubes.svg'
-                                />
-                                <p>Компания</p>
-                            </div>
-                            <div className='plasmatron__works-completed-item'>
-                                <img
-                                    className='plasmatron__works-completed-cubes'
-                                    src='/images/plasmatron/cubes.svg'
-                                />
-                                <p>Компания</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                {/*<div className='plasmatron__works-completed'>*/}
+                {/*    <h2 className='plasmatron__subtitle'>Акт выполненных работ</h2>*/}
+                {/*    <div className='plasmatron__works-completed-body'>*/}
+                {/*        <div className='plasmatron__works-completed-group'>*/}
+                {/*            <div className='plasmatron__works-completed-item'>*/}
+                {/*                <img*/}
+                {/*                    className='plasmatron__works-completed-cubes'*/}
+                {/*                    src='/images/plasmatron/cubes.svg'*/}
+                {/*                />*/}
+                {/*                <p>Компания</p>*/}
+                {/*            </div>*/}
+                {/*            <div className='plasmatron__works-completed-item'>*/}
+                {/*                <img*/}
+                {/*                    className='plasmatron__works-completed-cubes'*/}
+                {/*                    src='/images/plasmatron/cubes.svg'*/}
+                {/*                />*/}
+                {/*                <p>Компания</p>*/}
+                {/*            </div>*/}
+                {/*        </div>*/}
+                {/*        <div className='plasmatron__works-completed-group'>*/}
+                {/*            <div className='plasmatron__works-completed-item'>*/}
+                {/*                <img*/}
+                {/*                    className='plasmatron__works-completed-cubes'*/}
+                {/*                    src='/images/plasmatron/cubes.svg'*/}
+                {/*                />*/}
+                {/*                <p>Компания</p>*/}
+                {/*            </div>*/}
+                {/*            <div className='plasmatron__works-completed-item'>*/}
+                {/*                <img*/}
+                {/*                    className='plasmatron__works-completed-cubes'*/}
+                {/*                    src='/images/plasmatron/cubes.svg'*/}
+                {/*                />*/}
+                {/*                <p>Компания</p>*/}
+                {/*            </div>*/}
+                {/*        </div>*/}
+                {/*        <div className='plasmatron__works-completed-group'>*/}
+                {/*            <div className='plasmatron__works-completed-item'>*/}
+                {/*                <img*/}
+                {/*                    className='plasmatron__works-completed-cubes'*/}
+                {/*                    src='/images/plasmatron/cubes.svg'*/}
+                {/*                />*/}
+                {/*                <p>Компания</p>*/}
+                {/*            </div>*/}
+                {/*            <div className='plasmatron__works-completed-item'>*/}
+                {/*                <img*/}
+                {/*                    className='plasmatron__works-completed-cubes'*/}
+                {/*                    src='/images/plasmatron/cubes.svg'*/}
+                {/*                />*/}
+                {/*                <p>Компания</p>*/}
+                {/*            </div>*/}
+                {/*        </div>*/}
+                {/*    </div>*/}
+                {/*</div>*/}
 
 
                 <div className='plasmatron__craft' id='plasmatrons'>
@@ -243,7 +235,7 @@ export const Plasmatron: React.FC = () => {
                             <img className='plasm-tech__img' src='/images/plasmatron/plasm-tech.png'/>
                         </div>
                         <h3 className='plasm-tech__title'>Цена:</h3>
-                        <p className='plasm-tech__cost'>12324341 руб</p>
+                        <p className='plasm-tech__cost'>500 000 руб</p>
                     </div>
                 </div>
 

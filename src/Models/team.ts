@@ -6,18 +6,18 @@ export interface ITeam {
 
 export const teamPersons: ITeam[] = [
     {
-        photo: '/images/team/mock-photo.png',
-        name: 'Иванов Иван Иванович',
-        jobTitle: 'Основатель'
+        photo: '/images/team/ilya.jpg',
+        name: 'Илья Куклин',
+        jobTitle: 'Ген. директор, Маркетинг, PR, GR'
     },
     {
-        photo: '/images/team/mock-photo.png',
-        name: 'Иванов Иван Иванович',
-        jobTitle: 'Основатель'
+        photo: '/images/team/aleksey.jpg',
+        name: 'Алексей Идиятулин',
+        jobTitle: 'Управление финансами, привлечение инвестиций, отчетность'
     },
     {
-        photo: '/images/team/mock-photo.png',
-        name: 'Иванов Иван Иванович',
-        jobTitle: 'Основатель'
+        photo: '/images/team/nikolay.jpg',
+        name: 'Николай Барашев',
+        jobTitle: 'Разработка продукта, модернизация продукта'
     },
 ]

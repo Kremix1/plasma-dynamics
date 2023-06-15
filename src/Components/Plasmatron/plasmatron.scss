@@ -26,11 +26,29 @@
 
     &__coating-container {
         display: flex;
+        align-items: center;
         flex-direction: column;
         width: 300px;
         height: 300px;
         padding: 40px;
         background: url("../../../public/images/plasmatron/tile-back.svg") 0/100% no-repeat;
+        cursor: pointer;
+    }
+
+    &__coating-on-container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 300px;
+        height: 300px;
+        padding: 40px;
+        background-color: $green-primary;
+        border-radius: 15px;
+        cursor: pointer;
+    }
+
+    &__coating-desc {
+        color: $white-primary;
     }
 
     &__coating-title {
