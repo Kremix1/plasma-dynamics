@@ -25,7 +25,8 @@ export const LeaveRequest = () => {
         // });
         // e.target.reset();
 
-        setApprovedForm(true);
+        // setApprovedForm(true);
+        alert('Ваша заявка была отправлена');
     }
 
     function validate() {
@@ -59,17 +60,17 @@ export const LeaveRequest = () => {
                 <div className='leave-request__body'>
                     <img className='leave-request__img' src='/images/about/plasmatron.png'/>
                     {!approvedForm ?
-                        <form ref={form} action="send.php" method="POST" name='form_id' id='form_id' className='leave-request__form' onSubmit={(e) => submitForm(e)}>
+                        <form ref={form} action="send.php" method="POST" name='form_id' id='form_id' className='leave-request__form'>
                             <p className='leave-request__text'>Если остались вопросы, оставьте свою заявку.<br/>Специалисты свяжутся с вами и помогут найти нужное для вас решение.</p>
                             <input value={name} onChange={(e) => setName(e.target.value)} id='user_name' type='text' name="user_name" className='leave-request__input' placeholder='Имя*'/>
                             <input value={phone} onChange={(e) => setPhone(e.target.value)} id='user_phone' type='text' name="user_phone" className='leave-request__input' placeholder='Номер телефона*'/>
                             <input value={mail} onChange={(e) => setMail(e.target.value)} id='user_mail' type='text' name="user_mail" className='leave-request__input' placeholder='Почта*'/>
                             <textarea name="message" className='leave-request__input-area' placeholder='Вопрос*'/>
                             <label onChange={() => setAgreement(prev => !prev)} className='leave-request__checkbox-label'><input className='leave-request__checkbox' checked={agreement} type='checkbox'/>Соглашаюсь с обработкой персональных данных*</label>
-                            <button className={agreement ?
+                            <button onClick={(e) => submitForm(e)} type='submit' className={agreement ?
                                 'leave-request__button' :
                                 'leave-request__button leave-request__button_gray'}
-                                    type='submit' disabled={!agreement}>Отправить</button>
+                                 disabled={!agreement}>Отправить</button>
                         </form>
                         :
                         <div className='leave-request__approved-form'>
