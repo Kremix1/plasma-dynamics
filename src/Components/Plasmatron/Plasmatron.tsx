@@ -116,33 +116,15 @@ export const Plasmatron: React.FC = () => {
                             <SwiperSlide>
                                 <div className='works__container'>
                                     <h3 className='works__title'>Описание:</h3>
-                                    <p className='works__text'>Нанесения износостойкого, жаростойкого и термобарьерного композитного покрытия на фурмы доменных печей для компании "НЛМК"</p>
+                                    <p className='works__text'>Дисковая деталь</p>
                                     <div className='works__body'>
                                         <img
                                             className='works__img'
-                                            src='/images/plasmatron/works-1.png'
+                                            src='/images/plasmatron/works-3.png'
                                         />
                                         <img
                                             className='works__img'
-                                            src='/images/plasmatron/works-2.png'
-                                        />
-                                    </div>
-                                    <h3 className='works__title works__title_result'>Результат:</h3>
-                                    <p className='works__text'>Срок эксплуатации фурмы без покрытия 40 дней, с покрытием 240</p>
-                                </div>
-                            </SwiperSlide>
-                            <SwiperSlide>
-                                <div className='works__container'>
-                                    <h3 className='works__title'>Описание:</h3>
-                                    <p className='works__text'>Нанесения износостойкого, жаростойкого и термобарьерного композитного покрытия на фурмы доменных печей для компании "НЛМК"</p>
-                                    <div className='works__body'>
-                                        <img
-                                            className='works__img'
-                                            src='/images/plasmatron/works-1.png'
-                                        />
-                                        <img
-                                            className='works__img'
-                                            src='/images/plasmatron/works-2.png'
+                                            src='/images/plasmatron/works-4.png'
                                         />
                                     </div>
                                     <h3 className='works__title works__title_result'>Результат:</h3>

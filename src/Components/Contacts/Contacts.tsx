@@ -16,10 +16,10 @@ export const Contacts: React.FC = () => {
                                 </a>
                             )}
                         </div>
-                        <div className='contacts__social'>
-                            <a className='contacts__social-item' href='#'><img src='/images/contacts/vk.svg'/></a>
-                            <a className='contacts__social-item' href='#'><img src='/images/contacts/telegram.svg'/></a>
-                        </div>
+                        {/*<div className='contacts__social'>*/}
+                        {/*    <a className='contacts__social-item' href='#'><img src='/images/contacts/vk.svg'/></a>*/}
+                        {/*    <a className='contacts__social-item' href='#'><img src='/images/contacts/telegram.svg'/></a>*/}
+                        {/*</div>*/}
                     </div>
                     <iframe
                         src="https://yandex.ru/map-widget/v1/?um=constructor%3Acb8af4c611996ba7ee8c67ebbec1f6161a591e6f844aa3bb4e9c10cf870f2e76&amp;source=constructor"
