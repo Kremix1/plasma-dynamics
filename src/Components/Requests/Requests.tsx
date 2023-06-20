@@ -17,9 +17,9 @@ export const Requests: React.FC = () => {
                     </div>
                     <div className='requests__item'>
                         <div className='requests__number'>2</div>
-                        <h2 className='requests__item-title'>Продажа  плазматронов</h2>
+                        <h2 className='requests__item-title'>Продажа  комплектующих для плазмотронов</h2>
                         <p className='requests__item-subtitle'>Осуществляется продажа комплектующих
-                            и расходных материалов для плазматрона:
+                            и расходных материалов для плазмотрона:
                             сопла, катоды, насадки, вихревые кольца  и другое.
                         </p>
                     </div>

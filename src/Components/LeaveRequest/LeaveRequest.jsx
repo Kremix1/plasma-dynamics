@@ -17,7 +17,7 @@ export const LeaveRequest = () => {
             return;
         }
 
-        emailjs.sendForm('service_818q51x', 'template_dd0mmhr', form.current, 'ADQS3Y40pUo1_c19z')
+        emailjs.sendForm('service_o5tpzdc', 'template_9w0grst', form.current, 'iZj0AqSdHBWmvkoIt')
         .then((result) => {
             console.log(result.text);
         }, (error) => {
