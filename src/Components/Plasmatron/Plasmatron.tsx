@@ -30,7 +30,7 @@ export const Plasmatron: React.FC = () => {
                     <h1 className='plasmatron__title'>Плазменное напыление</h1>
                     <h2 className='plasmatron__subtitle'>Описание процесса</h2>
                     <div className='plasmatron__body'>
-                        <div className='plasmatron__text'>Плазменное напыление - это технология нанесения на поверхность изделий функциональных покрытий. Данный метод позволяет увеличить срок эксплуатации деталей, а также восстановить изношенное изделие. Плазменное напыление широко применяется для защиты от высокотемпературного износа, для защиты от коррозии, для упрочнения поверхности деталей, работающих при высоких нагрузках.
+                        <div className='plasmatron__text'>Плазменное напыление – технологический процесс при котором напыляемый материал разогревается до жидкого состояния и переносится на обрабатываемую поверхность при помощи потока плазмы с высокой температурой. Данный метод позволяет эффективно формировать защитное покрытие и проводить восстановление изношенных частей металлических изделий.
                         </div>
                         <img className='plasmatron__img' src='/images/plasmatron/plasmatron.svg'/>
                     </div>
@@ -57,7 +57,7 @@ export const Plasmatron: React.FC = () => {
 
                 <div className='plasmatron__cost'>
                     <h2 className='plasmatron__subtitle'>Ценообразование</h2>
-                    <h3 className='plasmatron__subsubtitle'>Полная стоимость зависит от нексольких факторов:</h3>
+                    <h3 className='plasmatron__subsubtitle'>Полная стоимость зависит от нескольких факторов:</h3>
                     <div className='plasmatron__cost-body'>
                         <div className='plasmatron__cost-item'>
                             <span className='plasmatron__cost-number'>1</span>
@@ -98,7 +98,7 @@ export const Plasmatron: React.FC = () => {
                             <SwiperSlide>
                                 <div className='works__container'>
                                     <h3 className='works__title'>Описание:</h3>
-                                    <p className='works__text'>Нанесения износостойкого, жаростойкого и термобарьерного композитного покрытия на фурмы доменных печей для компании "НЛМК"</p>
+                                    <p className='works__text'>Нанесение износостойкого, жаростойкого и термобарьерного композитного покрытия на фурмы доменных печей для компании "НЛМК"</p>
                                     <div className='works__body'>
                                         <img
                                             className='works__img'
@@ -146,7 +146,7 @@ export const Plasmatron: React.FC = () => {
                                         />
                                     </div>
                                     <h3 className='works__title works__title_result'>Результат:</h3>
-                                    <p className='works__text'>Покрытие проверено в камере солевого тумана в течение 764 часов и показала положительные результаты</p>
+                                    <p className='works__text'>Покрытие проверено в камере солевого тумана в течение 764 часов и показало положительные результаты</p>
                                 </div>
                             </SwiperSlide>
                             <SwiperSlide>

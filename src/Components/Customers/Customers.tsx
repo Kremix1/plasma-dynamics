@@ -1,7 +1,6 @@
 import "./customers.scss"
 // @ts-ignore
 import {customers} from "../../Models/customers.ts";
-import { Key } from "react";
 
 export const Customers: React.FC = () => {
     return (

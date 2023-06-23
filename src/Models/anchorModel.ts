@@ -17,7 +17,7 @@ export const headerAnchors: IHeaderAnchors[] = [
         link: '#plasm'
     },
     {
-        title: 'Плазмотроны',
+        title: 'Комплектующие',
         link: '#plasmatrons'
     },
     {

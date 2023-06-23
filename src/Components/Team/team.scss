@@ -25,6 +25,7 @@
         flex-direction: column;
         width: fit-content;
         max-width: 360px;
+        height: 395px;
     }
 
     &__photo {
@@ -38,7 +39,7 @@
     }
 
     &__job-title {
-
+        text-align: center;
     }
 }
 

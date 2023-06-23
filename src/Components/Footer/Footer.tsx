@@ -16,7 +16,7 @@ export const Footer: React.FC = () => {
                         <a className='footer__link' href='#about'>О компании</a>
                         <a className='footer__link' href='#requests'>Услуги</a>
                         <a className='footer__link' href='#plasm'>Плазменное напыление</a>
-                        <a className='footer__link' href='#plasmatrons'>Плазматроны</a>
+                        <a className='footer__link' href='#plasmatrons'>Комплектующие</a>
                         <a className='footer__link' href='#contacts'>Контакты</a>
                     </div>
                     <div className='footer__body-group'>
