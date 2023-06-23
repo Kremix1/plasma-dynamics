@@ -5,6 +5,14 @@
         padding: 40px 30px;
         box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.25);
         border-radius: 15px;
+        background-color: $green-primary;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        h2 {
+            margin: 0;
+            font-weight: 600;
+        }
     }
 
     &__title {
@@ -15,10 +23,34 @@
 
     &__body {
         display: flex;
-        flex-wrap: wrap;
-        gap: 40px;
-        align-items: center;
+        gap: 20px;
+    }
+
+    &__item {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        background-color: $white-primary;
+        border-radius: 15px;
+
+        &_1 {
+            flex: 60% 1 1;
+        }
+
+        &_2 {
+            flex: 40% 1 1;
+        }
+
+        &_cost {
+            flex-direction: row;
+            gap: 20px
+        }
+    }
+
+    &__img-group {
         justify-content: center;
+        display: flex;
+        gap: 15px;
     }
 
     &__desc {
@@ -47,14 +79,39 @@
         line-height: 22px;
     }
 
-    &__img {
-        margin-bottom: 15px;
-    }
-
     &__cost {
         margin-top: 15px;
         font-weight: 600;
         font-size: 36px;
+    }
+}
+
+@media (max-width: 1439px) {
+    .plasm-tech {
+        &__body {
+            flex-wrap: wrap;
+        }
+    }
+}
+
+@media (max-width: 850px) {
+    .plasm-tech {
+        &__body {
+            flex-wrap: wrap;
+        }
+
+        &__img-group {
+            flex-wrap: wrap;
+            .plasm-tech__img {
+                width: inherit;
+            }
+        }
+
+        &__item {
+            &_cost {
+                flex-wrap: wrap;
+            }
+        }
     }
 }
 

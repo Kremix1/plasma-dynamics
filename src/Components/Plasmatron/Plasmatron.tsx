@@ -116,7 +116,7 @@ export const Plasmatron: React.FC = () => {
                             <SwiperSlide>
                                 <div className='works__container'>
                                     <h3 className='works__title'>Описание:</h3>
-                                    <p className='works__text'>Дисковая деталь</p>
+                                    <p className='works__text'>Нанесение антифрикционного покрытия на деталь гидрораспределителя</p>
                                     <div className='works__body'>
                                         <img
                                             className='works__img'
@@ -128,7 +128,39 @@ export const Plasmatron: React.FC = () => {
                                         />
                                     </div>
                                     <h3 className='works__title works__title_result'>Результат:</h3>
-                                    <p className='works__text'>Срок эксплуатации фурмы без покрытия 40 дней, с покрытием 240</p>
+                                    <p className='works__text'>Снижение коэффициента трения с 0,4 до 0,16 и увеличение срока эксплуатации в 2 раза</p>
+                                </div>
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <div className='works__container'>
+                                    <h3 className='works__title'>Описание:</h3>
+                                    <p className='works__text'>Нанесение коррозионностойкого покрытия на авиационные детали для компании "Уральские Авиалинии"</p>
+                                    <div className='works__body'>
+                                        <img
+                                            className='works__img'
+                                            src='/images/plasmatron/works-5.png'
+                                        />
+                                        <img
+                                            className='works__img'
+                                            src='/images/plasmatron/works-6.png'
+                                        />
+                                    </div>
+                                    <h3 className='works__title works__title_result'>Результат:</h3>
+                                    <p className='works__text'>Покрытие проверено в камере солевого тумана в течение 764 часов и показала положительные результаты</p>
+                                </div>
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <div className='works__container'>
+                                    <h3 className='works__title'>Описание:</h3>
+                                    <p className='works__text'>Нанесение антифрикционного покрытия на пневмоцилиндр для снижения коэффциента трения.</p>
+                                    <div className='works__body'>
+                                        <img
+                                            className='works__img'
+                                            src='/images/plasmatron/works-7.png'
+                                        />
+                                    </div>
+                                    <h3 className='works__title works__title_result'>Результат:</h3>
+                                    <p className='works__text'>Срок эксплуатации пневмоцилиндра увеличился в 2,5 раза</p>
                                 </div>
                             </SwiperSlide>
                         </Swiper>
@@ -193,31 +225,30 @@ export const Plasmatron: React.FC = () => {
 
                 <div className='plasmatron__craft' id='plasmatrons'>
                     <p className='plasmatron__number'>2</p>
-                    <h1 className='plasmatron__title'>Продажа комплектующих для плазмотронов</h1>
+                    <h1 className='plasmatron__title'>Разработка плазмотронов</h1>
+                    <h2 className='plasmatron__subtitle'>Комплект анод/катод для плазмотронов F4</h2>
                     <div className='plasm-tech__container'>
-                        <h3 className='plasm-tech__title'>Технические характеристики</h3>
                         <div className='plasm-tech__body'>
-                            <div className='plasm-tech__desc'>
-
-                                <div className='plasm-tech__group'>
-                                    <h4 className='plasm-tech__desc-title'>Наименование</h4>
-                                    {plasmTech.map((tech) =>
-                                        <p className='plasm-tech__desc-text'>{tech.title}</p>
-                                    )}
-                                </div>
-
-                                <div className='plasm-tech__group'>
-                                    <h4 className='plasm-tech__desc-title'>Значение</h4>
-                                    {plasmTech.map((tech) =>
-                                        <p className='plasm-tech__desc-text'>{tech.desc}</p>
-                                    )}
+                            <div className='plasm-tech__item plasm-tech__item_1'>
+                                <h2 className='plasmatron__subtitle'>Анод</h2>
+                                <div className='plasm-tech__img-group'>
+                                    <img className='plasm-tech__img' src='/images/plasmatron/1.png'/>
+                                    <img className='plasm-tech__img' src='/images/plasmatron/2.png'/>
+                                    <img className='plasm-tech__img' src='/images/plasmatron/3.png'/>
                                 </div>
                             </div>
-
-                            <img className='plasm-tech__img' src='/images/plasmatron/plasm-tech.png'/>
+                            <div className='plasm-tech__item plasm-tech__item_2'>
+                                <h2 className='plasmatron__subtitle'>Катод</h2>
+                                <div className='plasm-tech__img-group'>
+                                    <img className='plasm-tech__img' src='/images/plasmatron/4.png'/>
+                                    <img className='plasm-tech__img' src='/images/plasmatron/5.png'/>
+                                </div>
+                            </div>
                         </div>
-                        <h3 className='plasm-tech__title'>Цена:</h3>
-                        <p className='plasm-tech__cost'>500 000 руб</p>
+                        <div className='plasm-tech__item plasm-tech__item_cost'>
+                            <h2 className='plasmatron__subtitle'>Стоимость комплекта:</h2>
+                            <h2 className='plasmatron__subtitle'>35 000 руб</h2>
+                        </div>
                     </div>
                 </div>
 

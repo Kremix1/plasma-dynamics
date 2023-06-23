@@ -19,6 +19,9 @@ html{scroll-behavior: smooth;}
 /*--------------------*/
 
 /*Шрифт*/
+* {
+  line-height: 1.3em;
+}
 
 @font-face {
   font-weight: 300; /* Соответствует значению normal */
