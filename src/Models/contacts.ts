@@ -5,7 +5,7 @@ interface IContacts {
 
 export const contacts: IContacts[] = [
     {
-        name: 'Свердловская обл., Березовский, Кольцевая ул., 2б',
+        name: 'Свердловская обл., г. Екатеринбург',
         img: 'marker'
     },
     {
