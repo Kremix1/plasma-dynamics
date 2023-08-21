@@ -19,7 +19,7 @@
         width: 40px;
         height: 40px;
         top: 20px;
-        right: 20px;
+        right: 40px;
         fill: $white-primary;
         z-index: 2;
     }
@@ -34,7 +34,7 @@
     }
 
     &__img {
-        width: 200px;
+        width: 300px;
     }
 
     &__anchors {
@@ -103,6 +103,10 @@
 
 @media (max-width: 1249px) {
     .main {
+        &__img {
+            width: 400px;
+        }
+
         &__links {
             padding: 20px;
             border-radius: 15px;
@@ -134,10 +138,21 @@
         &__anchors {
             flex-direction: column;
         }
+    }
+}
 
-        &__phone {
-
+@media (max-width: 550px) {
+    .main {
+        &__header {
+            padding: 24px;
+        }
+        &__img {
+            width: 200px;
         }
 
+        &__burger {
+            right: 24px;
+        }
     }
+    
 }

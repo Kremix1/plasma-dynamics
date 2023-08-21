@@ -152,15 +152,19 @@ export const Plasmatron: React.FC = () => {
                             <SwiperSlide>
                                 <div className='works__container'>
                                     <h3 className='works__title'>Описание:</h3>
-                                    <p className='works__text'>Нанесение антифрикционного покрытия на пневмоцилиндр для снижения коэффциента трения.</p>
+                                    <p className='works__text'>Нанесение антифрикционного покрытия на блок цилиндра гидромотора для снижения коэффициента трения</p>
                                     <div className='works__body'>
-                                        <img
+                                    <img
                                             className='works__img'
                                             src='/images/plasmatron/works-7.png'
                                         />
+                                    <img
+                                            className='works__img'
+                                            src='/images/plasmatron/works-8.png'
+                                        />
                                     </div>
                                     <h3 className='works__title works__title_result'>Результат:</h3>
-                                    <p className='works__text'>Срок эксплуатации пневмоцилиндра увеличился в 2,5 раза</p>
+                                    <p className='works__text'>Срок эксплуатации блока цилиндра гидромотора увеличился в 2,5 раза</p>
                                 </div>
                             </SwiperSlide>
                         </Swiper>
