@@ -225,7 +225,7 @@ export const Plasmatron: React.FC = () => {
 
                 <div className='plasmatron__craft' id='plasmatrons'>
                     <p className='plasmatron__number'>2</p>
-                    <h1 className='plasmatron__title'>Разработка плазмотронов</h1>
+                    <h1 className='plasmatron__title'>Продажа комплектующих для плазмотронов</h1>
                     <h2 className='plasmatron__subtitle'>Комплект анод/катод для плазмотронов F4</h2>
                     <div className='plasm-tech__container'>
                         <div className='plasm-tech__body'>
